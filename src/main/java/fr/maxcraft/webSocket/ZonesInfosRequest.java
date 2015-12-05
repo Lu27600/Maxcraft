@@ -5,24 +5,19 @@ import net.nathem.websocket.NathemWSRequest;
 import org.json.simple.JSONObject;
 
 
-public class ZoneInfosRequest extends NathemWSRequest{
+public class ZonesInfosRequest extends NathemWSRequest{
 
-    private int zoneId;
 
-    public ZoneInfosRequest(int zoneId) {
-        super();
-        this.zoneId = zoneId;
-    }
+
 
     @Override
     public String getType() {
-        return "ZONE-INFOS";
+        return "ZONES-INFOS";
     }
 
     @Override
     public JSONObject buildData() {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("Zone-Id", this.zoneId);
         return jsonObject;
     }
 
