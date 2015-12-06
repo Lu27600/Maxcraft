@@ -1,8 +1,11 @@
 package fr.maxcraft.webSocket;
 
 
+import fr.maxcraft.server.zone.Zone;
 import net.nathem.websocket.NathemWSRequest;
 import org.json.simple.JSONObject;
+
+import java.util.ArrayList;
 
 
 public class ZonesInfosRequest extends NathemWSRequest{
@@ -17,14 +20,13 @@ public class ZonesInfosRequest extends NathemWSRequest{
 
     @Override
     public JSONObject buildData() {
-        JSONObject jsonObject = new JSONObject();
-        return jsonObject;
+        return new JSONObject();
     }
 
     @Override
     public void onResponse(JSONObject jsonObject) {
 
-    //TODO à compléter?
+
 
     }
 }
